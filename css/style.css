@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+  
+body {
+  width: 100%;
+  height: 100%;
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  /* background-color: #004040; */
+  background-color: #115436;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+ul li a {
+  color: rgb(255, 255, 255); /* Change to any color you prefer */
+  text-decoration: none; /* Optional: Removes underline */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #212121; /* Optional: Changes color on hover */
+  transform: scale(1.1);
+}
+
+ul li a:active {
+  color: #e60000; /* Optional: Changes color on hover */
+  background-color: #115436;
+  transform: scale(1.1);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 80px);
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #212121;
+  color: white;
+}
+
+.profile h1 {
+  font-size: 3.5em;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.profile-image img {
+  width: 500px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+}
+  
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #212121;
+  color: white;
+  width: 100%;
+}
